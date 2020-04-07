@@ -37,6 +37,7 @@ public class TicTacToe extends JPanel {
       g.drawImage(img, 0, 0, null);
     } catch (IOException e) {
       System.out.println("Can't load image.");
+      System.exit(0);
     }
   } 
 
@@ -124,11 +125,11 @@ public class TicTacToe extends JPanel {
     public void actionPerformed(ActionEvent e) {
       String message = "Developed by Pedro Perone\n\n" +
                        "v1.0 released in April 7, 2020\n\n" +
-                       "The goal in TicTacToe is to get three " +
-                       "of your symbol (X or O) in a line, be " +
-                       "it horizontal, vertical or diagonal. " +
-                       "The first symbol to reach that goal wins. " +
-                       "Have fun!";
+                       "The goal in TicTacToe is to get\n" +
+                       "three of your symbols (X or O) in\n" +
+                       "a line, be it horizontal, vertical\n" +
+                       "or diagonal. The first symbol to\n" +
+                       "reach that goal wins. Have fun!";
 
       JOptionPane.showMessageDialog(
         null, 
